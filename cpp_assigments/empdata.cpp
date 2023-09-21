@@ -17,22 +17,22 @@ int main(int argc, char *argv[])
         cin >> name;
         cout << "Your id is " << id << "\n";
         cout << "Your name is " << name << "\n";
-        ofstream personfile;
-        personfile.open("person");
-        personfile << id << "\n";
-        personfile << name << "\n";
-        personfile.close();
+        ofstream empdatafile;
+        empdatafile.open("empoyee");
+        empdatafile << id << "\n";
+        empdatafile << name << "\n";
+        empdatafile.close();
     }
     if (input == "-view")
     {
-        ifstream personfile;
+        ifstream empdatafile;
         string line;
-        personfile.open("person");
-        while (getline(personfile, line))
+        empdatafile.open("empoyee");
+        while (getline(empdatafile, line))
         {
             cout << line << "\n";
         }
-        personfile.close();
+        empdatafile.close();
     }
     return 0;
 }
