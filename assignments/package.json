@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "assignment:1":"npx tsc ./assignment_1.ts && node ./assignment_1.js",
+    "assignment:2":"npx tsc ./assignment_2.ts && node ./assignment_2.js",
+    "assignment:3":"npx tsc ./assignment_3.ts && node ./assignment_3.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
